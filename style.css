@@ -55,8 +55,8 @@ h1{
     background-attachment: transparent;
     color: #111111;
     font-size: 0.9em;
-    border: none;
-    border-bottom: 2px solide #d1d3d4;
+    border: 2px solide black;
+    
     padding: 1em 0.5em;
 }
 
@@ -111,28 +111,28 @@ h1{
     border-radius: 50%;
 }
 
-.task input[type="checkbox"]:before{
+/* .task input[type="checkbox"]:before{
     content: "";
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
 
-}
+} */
 
 .task input[type="checkbox"]:checked{
     background-color: teal;
     border-color: teal;
 }
 
-.task input[type="checkbox"]:checked:before{
+/* .task input[type="checkbox"]:checked:before{
     position: absolute;
     content: "\f00c";
     color: #fff;
     font-size: 0.8em;
     font-family: font Awesome 5 free;
     font-weight: 900;
-}
+} */
 
 .task span{
     font: 0.9em;
@@ -158,9 +158,9 @@ h1{
     background-color: #ff5c5c;
 }
 
-#pending-tasks span{
+/* #pending-tasks span{
     color: teal;
-}
+} */
 
 .completed{
     text-decoration: line-through;

@@ -100,22 +100,7 @@ function addTaskToLocalStorage() {
         };
     });
     
-    const tasksCheck = document.querySelectorAll('.task-check');
-    tasksCheck.forEach((checkBox) => {
-        checkBox.onchange = () => {
-            checkBox.nextElementSibling.classList.toggle("completed");
-            if(checkBox.checked) {
-                taskCount -= 1;
-            }
-            else{
-                taskCount += 1;
-            }
-            displayCount(taskCount);
-        };
-    });
-    taskCount += 1;
-    displayCount(taskCount);
-    newTaskInput.value = "";
+         
 };  
 
 addBtn.addEventListener('click', addTask);
